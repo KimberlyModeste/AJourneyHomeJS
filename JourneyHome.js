@@ -49,8 +49,7 @@ async function JourneyHome(){
 	let combat = null
 	let event = null;
 	
-	await waitForEnter()
-	console.log('\n')
+
 	await charText('You wake up to find yourself in an unfamiliar place. Where are you? WHO are you? \nWhat is your name?', 100)
 	await waitForEnter()
 	if(getUserInput() != "")
