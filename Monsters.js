@@ -27,7 +27,7 @@ constructor(type)
 				this.type = "Adult Black Dragon";
 				// this.magictype = "Acid";
 				this.defense = 12;
-				this.health = 25;
+				this.health = 50;
 				this.attack = 6;
 				this.magic = 5;
 				// this.xp = 11500;
@@ -37,7 +37,7 @@ constructor(type)
 				this.type = "Adult Blue Dragon";
 				// this.magictype = "Lightning";
 				this.defense = 8;
-				this.health = 26;
+				this.health = 43;
 				this.attack = 10;	
 				this.magic = 5;
 				// this.xp = 15000;
@@ -47,7 +47,7 @@ constructor(type)
 				this.type = "Adult Brass Dragon";
 				// this.magictype = "Fire";
 				this.defense = 8;
-				this.health = 30;
+				this.health = 34;
 				this.attack = 12;	
 				this.magic = 5;
 				// this.xp = 10000;
@@ -57,7 +57,7 @@ constructor(type)
 				this.type = "Adult Bronze Dragon";
 				// this.magictype = "Lightning";
 				this.defense = 5;
-				this.health = 29;
+				this.health = 41;
 				this.attack = 14;	
 				this.magic = 5;
 				// this.xp = 13000;
@@ -67,7 +67,7 @@ constructor(type)
 				this.type = "Adult Copper Dragon";
 				// this.magictype = "Acid";
 				this.defense = 9;
-				this.health = 25;
+				this.health = 39;
 				this.attack = 5;	
 				this.magic = 5;
 				// this.xp = 11500;
@@ -77,7 +77,7 @@ constructor(type)
 				this.type = "Adult Gold Dragon";
 				// this.magictype = "Fire";
 				this.defense = 13;
-				this.health = 29;
+				this.health = 47;
 				this.attack = 5;	
 				this.magic = 5;
 				// this.xp = 18000;
@@ -87,7 +87,7 @@ constructor(type)
 				this.type = "Adult Green Dragon";
 				// this.magictype = "Poison";
 				this.defense = 9;
-				this.health = 28;
+				this.health = 36;
 				this.attack = 8;	
 				this.magic = 5;
 				// this.xp = 13000;
@@ -97,7 +97,7 @@ constructor(type)
 				this.type = "Adult Red Dragon";
 				// this.magictype = "Fire";
 				this.defense = 14;
-				this.health = 27;
+				this.health = 45;
 				this.attack = 10;	
 				this.magic = 5;
 				// this.xp = 18000;
@@ -107,7 +107,7 @@ constructor(type)
 				this.type = "Adult Silver Dragon";
 				// this.magictype = "Cold";
 				this.defense = 8;
-				this.health = 25;
+				this.health = 50;
 				this.attack = 9;	
 				this.magic = 5;
 				// this.xp = 15000;
@@ -117,7 +117,7 @@ constructor(type)
 				this.type = "Adult White Dragon";
 				// this.magictype = "Cold";
 				this.defense = 8;
-				this.health = 30;
+				this.health = 39;
 				this.attack = 5;	
 				this.magic = 5;
 				// this.xp = 10000;
@@ -133,7 +133,7 @@ constructor(type)
 			case "Rock Titan":
 			this.type = "Stone Giant";
 			this.defense = 15;
-			this.health = 25;
+			this.health = 40;
 			this.attack = 11;
 			// this.xp = 2900;
 			this.speed = 5;
@@ -144,7 +144,7 @@ constructor(type)
 			case "Hydra":
 			this.type = "Hydra";
 			this.defense = 15;
-			this.health = 20;
+			this.health = 45;
 			this.attack = 10; 
 			// this.xp = 3900;
 			this.speed = 15;

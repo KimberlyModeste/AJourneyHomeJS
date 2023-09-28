@@ -29,10 +29,8 @@ class Event {
 					+ "this titan? [Y]/[N]"];
 
 	async startUp(){
-		let randNum = 9
-		// let randNum = Math.floor(Math.random() * 13) 
+		let randNum = Math.floor(Math.random() * 13) 
 		console.log('\n')
-		console.log(randNum)
 		if(randNum >= 0 && randNum <= 2)
 		{
 			await this.goodRNG();
@@ -42,12 +40,12 @@ class Event {
 		{
 			await this.neutralRNG();
 		}
-		else if (randNum >= 6 &&randNum <= 9)
+		else if (randNum >= 6 &&randNum <= 8)
 		{
 			await this.badRNG();
 		}
 
-		else if (randNum >= 10&&randNum <= 11) 
+		else if (randNum >= 9&&randNum <= 11) 
 		{
 			await this.whoAmbushed();
 		}
