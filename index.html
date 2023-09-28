@@ -1,0 +1,76 @@
+<html>
+    <head>
+		<style>
+			#terminal {
+				font-family: monospace;
+				background-color: #000;
+				color: #fff;
+				padding: 20px;
+			 }
+			 #input {
+				margin-top: 20px;
+			 }
+			 #prompt {
+				font-weight: bold;
+			 }
+			 #cmd {
+				background: transparent;
+				border: none;
+				color: white;
+				outline: none;
+			}
+			input[type="text"], textarea {
+				border: none;
+				outline: none;
+				/*border-bottom: 1px solid #ccc; /* You can adjust the color and thickness of the outline */
+			}
+		</style>
+        <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+		<script type="text/javascript" src="JourneyHome.js"></script>
+		<script type="text/javascript" src="Player.js"></script>
+		<script type="text/javascript" src="Event.js"></script>
+		<script type="text/javascript" src="Monsters.js"></script>
+		<script type="text/javascript" src="Combat.js"></script>
+
+		
+        <script language="javascript" >
+			console.log = function(message){
+				if(message.includes('\n'))
+				{
+					$("#output").append("<div></div>");	
+					$("#output").append("$ ");	
+				}
+				
+				$("#output").append(message)
+			}
+		
+		</script>
+    </head>
+	<body onload="JourneyHome()">
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+		<div id="terminal">
+			<div id="output"></div>
+			<div hidden id="myInput"></div>
+			<div id="input">
+				<span id="prompt">$ </span>
+				<input type="text" id="cmd" value="">
+			</div>
+		</div>
+		<script>
+			$(document).ready(function() {
+				$("#cmd").focus();
+				$("#cmd").keypress(function(e) {
+					if(e.which == 13) {
+						var cmd = $("#cmd").val();
+						$("#myInput").empty()
+						$("#myInput").append(cmd)
+						$("#output").append("<div>$ " + cmd + "</div>");
+						$("#cmd").val("");
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
+
+
