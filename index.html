@@ -26,7 +26,7 @@
 				/*border-bottom: 1px solid #ccc; /* You can adjust the color and thickness of the outline */
 			}
 			body{
-				background-color: #000;
+				background-color: black;
 			}
 		</style>
         <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
@@ -41,8 +41,7 @@
 			console.log = function(message){
 				if(message.includes('\n'))
 				{
-					$("#output").append("<div></div>");	
-					$("#output").append("$ ");	
+					$("#output").append("<div></div>");		
 				}
 				
 				$("#output").append(message)
