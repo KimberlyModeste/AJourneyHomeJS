@@ -210,6 +210,7 @@ class Combat{
 			}
 		}
 		console.log('\n')
+		console.log('\n')
 		
 		
 		if (playerMove.charAt(0) == 'A' && enemyMove == 1)// attack draw
